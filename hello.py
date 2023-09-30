@@ -16,7 +16,7 @@ from hash import hash_password,verify_password,load_users,save_users,isEmail
 import datetime
 from sent_email import sent_otp
 import random
-from streamlit_js_eval import streamlit_js_eval
+# from streamlit_js_eval import streamlit_js_eval
 
 
 
