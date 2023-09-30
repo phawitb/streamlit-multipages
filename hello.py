@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-import extra_streamlit_components as stx
+# import extra_streamlit_components as stx
 from hash import hash_password,verify_password,load_users,save_users,isEmail
 import datetime
 from sent_email import sent_otp
