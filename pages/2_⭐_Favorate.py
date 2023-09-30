@@ -204,6 +204,7 @@ if tabs_list:
                         df3['bid_time'] = df3['bid_time'].astype(int)
                         df3['bid_time'] = df3['bid_time'].astype(str)
                         tabs_list3 = list(df3['bid_time'].unique())
+                        tabs_list3.sort()
                         if tabs_list3:
                             data = []
                             for k in tabs_list3:
