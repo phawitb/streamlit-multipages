@@ -412,7 +412,8 @@ if st.session_state["current_id"]:
         df['lastSta_date'].fillna("-", inplace=True)
 
         data = []
-        for k in ['🏠 Sell-order','min↑','max↓','🌎 Map']:
+        # for k in ['🏠 Sell-order','min↑','max↓','🌎 Map']:
+        for k in ['🌎 Map','🏠 Sell-order','min↑','max↓']:
             data.append(stx.TabBarItemData(id=k, title=k, description=""))
         chosen_id00 = stx.tab_bar(data = data,default='🏠 Sell-order')
 
