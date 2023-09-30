@@ -232,7 +232,7 @@ def create_map(df):
 
             encoded_text = base64.b64encode(json.dumps(dict(row)).encode('utf-8'))
             # htm += f"<h4><a href=http://localhost:8503/-/?name={encoded_text} target='_blank'>⭐</a></h4>"
-            htm += f"<h4><a href=https://mapled.streamlit.app/-/?name={encoded_text} target='_blank'>⭐</a></h4>"
+            htm += f"<h4><a href=https://mapled.streamlit.app/api/?name={encoded_text} target='_blank'>⭐</a></h4>"
 
             popup=folium.Popup(htm, max_width=400)
 
