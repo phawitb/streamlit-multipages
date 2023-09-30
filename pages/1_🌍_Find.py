@@ -392,7 +392,8 @@ if st.session_state["current_id"]:
         for i in list(df['bid_dates'].unique()):
             if str(i) != 'nan':
                 all_date = all_date+eval(i)
-        all_date = set(all_date)
+        all_date = list(set(all_date))
+        all_date.sort()
         all_date = ['All Date'] + [datetime.strptime(x, '%Y%m%d').strftime('%Y/%m/%d') for x in all_date]
         selected_date = st.sidebar.selectbox('Date',all_date)
 
