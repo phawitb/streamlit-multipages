@@ -2,10 +2,10 @@ import streamlit as st
 
 
 # import extra_streamlit_components as stx
-# from hash import hash_password,verify_password,load_users,save_users,isEmail
-# import datetime
-# from sent_email import sent_otp
-# import random
+from hash import hash_password,verify_password,load_users,save_users,isEmail
+import datetime
+from sent_email import sent_otp
+import random
 # from streamlit_js_eval import streamlit_js_eval
 
 st.set_page_config(
