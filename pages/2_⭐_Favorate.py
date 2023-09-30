@@ -201,8 +201,8 @@ if tabs_list:
                 for index,p in enumerate(tabs_list2):
                     if chosen_idM2 == p:
                         df3 = df2[df2['lastSta_date']==p]
-                        df2['bid_time'] = df2['bid_time'].astype(int)
-                        df2['bid_time'] = df2['bid_time'].astype(str)
+                        df3['bid_time'] = df3['bid_time'].astype(int)
+                        df3['bid_time'] = df3['bid_time'].astype(str)
                         tabs_list3 = list(df3['bid_time'].unique())
                         if tabs_list3:
                             data = []
