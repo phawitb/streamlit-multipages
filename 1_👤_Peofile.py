@@ -24,7 +24,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 
-st.write("# Welcome to Streamlit! 👋")
+st.write("# Welcome to LED MAP! 👋")
 
 # st.sidebar.success("Select a demo above.")
 
