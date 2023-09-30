@@ -1,4 +1,13 @@
 import streamlit as st
+
+
+import extra_streamlit_components as stx
+from hash import hash_password,verify_password,load_users,save_users,isEmail
+import datetime
+from sent_email import sent_otp
+import random
+# from streamlit_js_eval import streamlit_js_eval
+
 st.set_page_config(
     page_title="Hello",
     page_icon="👋",
@@ -10,13 +19,6 @@ hide_streamlit_style = """
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
-
-import extra_streamlit_components as stx
-from hash import hash_password,verify_password,load_users,save_users,isEmail
-import datetime
-from sent_email import sent_otp
-import random
-# from streamlit_js_eval import streamlit_js_eval
 
 
 
