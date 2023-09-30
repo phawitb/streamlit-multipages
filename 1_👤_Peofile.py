@@ -26,7 +26,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 st.write("# Welcome to Streamlit! 👋")
 
-st.sidebar.success("Select a demo above.")
+# st.sidebar.success("Select a demo above.")
 
 # st.markdown(
 #     """
@@ -193,6 +193,7 @@ if not person_id:
                 tab3.text('New password and Re-New password must same value')
     
 else:
+    st.sidebar.success(person_id)
     LIST_MENUS = ["📈 My Profile", "🗃 Change Password"]
     tab1,tab2 = st.tabs(LIST_MENUS)
 
