@@ -1,15 +1,15 @@
 import streamlit as st
-# st.set_page_config(
-#     page_title="Hello",
-#     page_icon="👋",
-# )
-# hide_streamlit_style = """
-#             <style>
-#             #MainMenu {visibility: hidden;}
-#             footer {visibility: hidden;}
-#             </style>
-#             """
-# st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+st.set_page_config(
+    page_title="Hello",
+    page_icon="👋",
+)
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
 import extra_streamlit_components as stx
 from hash import hash_password,verify_password,load_users,save_users,isEmail
