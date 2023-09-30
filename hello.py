@@ -12,13 +12,14 @@ st.set_page_config(
     page_title="Hello",
     page_icon="👋",
 )
-hide_streamlit_style = """
+hide_st_style = """
             <style>
-            .reportview-header-github {
-              display: none;
-            }
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
             """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 
