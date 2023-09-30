@@ -14,9 +14,9 @@ st.set_page_config(
 )
 hide_streamlit_style = """
             <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
+            .reportview-header-github {
+              display: none;
+            }
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
